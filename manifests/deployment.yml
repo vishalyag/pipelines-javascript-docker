@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: vishalyagpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vishalyagpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: vishalyagpipelinesjavascriptdocker 
+          image: acraksprd.azurecr.io/vishalyagpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
